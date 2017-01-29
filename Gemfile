@@ -34,7 +34,7 @@ gem 'mini_magick'
 gem 'cloudinary'
 gem 'carrierwave'
 gem 'devise'
-gem 'rails_admin_rollincode', '~> 1.0'
+gem 'rails_admin_rollincode', '~> 1.0' , :git => 'https://github.com/cheesepaulo/rails_admin_custom_theme.git'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/cheesepaulo/rails_admin_custom_theme.git
+  revision: 81752a979bc6d373da24c996e3fbe3289be264fc
+  specs:
+    rails_admin_rollincode (1.2.1)
+      rails (>= 4.0, < 6)
+
+GIT
   remote: https://github.com/mshibuya/remotipart.git
   revision: cd653ddc43bb09767b8f2802d6e27b3e00ef992f
   specs:
@@ -246,6 +253,7 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.1)
   rails_admin!
+  rails_admin_rollincode (~> 1.0)!
   remotipart!
   sass-rails (~> 5.0)
   spring

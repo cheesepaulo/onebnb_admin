@@ -14,7 +14,7 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.excluded_models << "Photo"
+  # config.excluded_models << "Photo"
 
   config.actions do
     dashboard                     # mandatory

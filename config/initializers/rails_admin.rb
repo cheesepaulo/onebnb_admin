@@ -1,4 +1,6 @@
 RailsAdmin.config do |config|
+  config.main_app_name = Proc.new { |controller| [ "OneBnb", "Admin - #{controller.params[:action].try(:titleize)}" ] }
+
   ## == Devise ==
   config.authenticate_with do
     warden.authenticate! scope: :user
@@ -7,10 +9,12 @@ RailsAdmin.config do |config|
 
   config.authorize_with do
     if current_user.kind != "admin"
-      reset_session
+      reset_sessionhttps://www.youtube.com/watch?v=qzMQza8xZCc
       redirect_to '/users/sign_in'
     end
   end
+
+  config.excluded_models << "Photo"
 
   config.actions do
     dashboard                     # mandatory

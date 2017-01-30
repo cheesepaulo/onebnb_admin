@@ -9,7 +9,7 @@ RailsAdmin.config do |config|
 
   config.authorize_with do
     if current_user.kind != "admin"
-      reset_sessionhttps://www.youtube.com/watch?v=qzMQza8xZCc
+      reset_session
       redirect_to '/users/sign_in'
     end
   end
